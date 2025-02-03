@@ -2,9 +2,11 @@ package org.example.service;
 
 import org.example.entities.UserInfo;
 import org.example.entities.UserRole;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -12,6 +14,8 @@ import java.util.List;
 
 public class CustomUserDetails extends UserInfo implements UserDetails {
 
+//    @Autowired
+////    private UserDetailsService userDetailsService;
 
     private String username;
 
@@ -34,6 +38,7 @@ public class CustomUserDetails extends UserInfo implements UserDetails {
     public String getUsername(){
         return username;
     }
+
     public String getPassword(){
         return password;
     }

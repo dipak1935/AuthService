@@ -34,8 +34,9 @@ dependencies {
     implementation 'org.modelmapper:modelmapper:3.2.2'
     implementation 'mysql:mysql-connector-java:8.0.33'
     implementation 'io.jsonwebtoken:jjwt-api:0.12.6'
-//    runtime 'io.jsonwebtoken:jjwt-impl:0.12.6'
-//    runtime 'io.jsonwebtoken:jjwt-jackson:0.12.6'
+    implementation 'io.jsonwebtoken:jjwt-impl:0.12.6'
+    implementation 'io.jsonwebtoken:jjwt-jackson:0.12.6'
+    testImplementation libs.junit
 
 }
 
